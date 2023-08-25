@@ -1,0 +1,152 @@
+.container {
+	margin: auto;
+	text-align: center;
+}
+
+.game-container {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 1fr;
+}
+
+.dice {
+	text-align: center;
+	display: inline-block;
+}
+
+.box1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box2 {
+	display: grid;
+	grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+.balance {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.part2 {
+	display: block;
+	text-align: center;
+}
+
+.result,
+.restart {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.bet-btn {
+	width: 130px;
+	height: 40px;
+	border-radius: 8px;
+	border: #2b2b2b 3px solid;
+	padding: 10px 8px;
+	cursor: pointer;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	background: rgb(0, 3, 255);
+	background: linear-gradient(0deg, rgb(255, 94, 0) 0%, rgb(251, 2, 193) 100%);
+}
+
+.select-btn {
+	background: #232931;
+	background: linear-gradient(0deg, rgb(30, 30, 30) 0%, rgb(42, 42, 42) 100%);
+	color: #eeeeee;
+	border: #eee 3px solid;
+}
+
+.bet-btn-inactive {
+	background: rgb(63, 25, 125);
+	background: linear-gradient(
+		0deg,
+		rgb(204, 88, 31) 0%,
+		rgb(202, 47, 194) 100%
+	);
+	pointer-events: none;
+	cursor: default;
+}
+
+.play {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	background-color: #d7922a;
+}
+
+h1 {
+	margin: 30px;
+	font-family: "Lobster", cursive;
+	text-shadow: 5px 0 #232931;
+	font-size: 6rem;
+	color: #4ecca3;
+}
+
+.rules {
+	border: #232931 3px solid;
+	background-color: #d7af2a;
+	border-radius: 10px;
+}
+
+p {
+	font-size: 2rem;
+	color: #2b2b2b;
+	font-family: "Indie Flower", cursive;
+	font-weight: bold;
+}
+
+.result {
+	font-size: 2rem;
+	color: #2b2b2b;
+	font-family: "Lato", cursive;
+	font-weight: bold;
+}
+
+/* img {
+	width: 80%;
+} */
+
+.btn {
+	margin: 10px;
+	padding: 10px;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 8px;
+	background-color: rgb(248, 222, 189);
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: antiquewhite;
+}
+
+footer {
+	margin-top: 5%;
+	color: #eeeeee;
+	text-align: center;
+	font-family: "Indie Flower", cursive;
+}
+
+@media only screen and (max-width: 992px) {
+	.game-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+}
