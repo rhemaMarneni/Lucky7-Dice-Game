@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Lucky Seven</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Lucky 7 Dice Game</h1>
+			<div class="game-container">
+				<div class="box1">
+					<div class="dice">
+						<img
+							class="img1"
+							src="./images/dice6.png"
+							height="200"
+							width="200"
+						/>
+					</div>
+					&nbsp;&nbsp;&nbsp;
+					<div class="dice">
+						<img
+							class="img2"
+							src="./images/dice6.png"
+							height="200"
+							width="200"
+						/>
+					</div>
+				</div>
+				<div class="box2">
+					<div class="balance">
+						<div class="part1">
+							<p id="bal">Your Current Balance is: 2000 coins&nbsp;</p>
+						</div>
+						<div class="part2">
+							<div class="result">Start when you are ready!</div>
+						</div>
+					</div>
+					<div class="betting-tray">
+						<p>Make a guess:</p>
+						<button class="bet-btn" id="first" onclick="betFirst()">
+							Between 2 and 6
+						</button>
+						<button class="bet-btn" id="second" onclick="betSecond()">
+							Perfect 7
+						</button>
+						<button class="bet-btn" id="third" onclick="betThird()">
+							Between 8 and 12
+						</button>
+					</div>
+					<div class="play">
+						<button class="btn" type="button" onclick="gamePlay()">
+							<i class="fa fa-play"></i>&nbsp;Roll the Dice
+						</button>
+						<button class="btn" type="button" onclick="startOver()">
+							<i class="fa fa-refresh"></i>&nbsp;Start Over
+						</button>
+					</div>
+				</div>
+			</div>
+			<p style="font-size: 1.5rem" class="rules">
+				RuLES:<br />You start with a balance of 2000 coins. <br />
+				Then, you predict the sum of the numbers on the two dice on the next
+				toss, by choosing a bet (each 500 coins).<br />
+				If you were right, you get 1000 coins. But you don't get back the money
+				you bet.<br />
+				The game ends when you are down to 0 coins.
+			</p>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
